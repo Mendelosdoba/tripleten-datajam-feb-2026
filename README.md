@@ -156,6 +156,31 @@ Credit increases with higher interest rates
 Credit increases with higher disposable income
 
 This suggests borrowing remained strong despite rising financing costs.
+In addition to the linear regression baseline, we implemented a more advanced time-series framework using SARIMAX and Auto-ARIMA models.
+
+This approach allows us to account for:
+
+Seasonality
+
+Autocorrelation in macroeconomic time series
+
+Dynamic trend shifts
+
+Structural breaks
+
+The framework includes:
+
+Year-over-Year (YoY) and Month-over-Month (MoM) behavioral metrics
+
+Automated model fitting through run_all_models()
+
+Divergence measurement via gap_analysis()
+
+Counterfactual visualizations and gap-over-time plots
+
+Residual diagnostics to evaluate model stability
+
+This time-series approach strengthens the counterfactual analysis by validating whether deviations from trend represent temporary volatility or lasting structural change.
 
 Overall Conclusion
 
